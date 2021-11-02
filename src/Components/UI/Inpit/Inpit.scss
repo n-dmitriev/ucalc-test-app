@@ -1,0 +1,43 @@
+@import "../../../css/mixins";
+@import "../../../css/const";
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+  color: $color;
+
+  &_error {
+
+    & input {
+      border: 2px solid $border-color-error !important;
+      background-color: $background-error;
+    }
+  }
+
+  & input {
+    margin-top: 5px;
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    color: #201933;
+    padding: 10px 16px;
+    outline: none;
+    font-size: 16px;
+    @include animate();
+
+    &:hover {
+      border: 2px solid $border-color-hover;
+    }
+
+    &:disabled {
+      border: 2px solid $border-color;
+      color: $disabled-color;
+      cursor: not-allowed;
+    }
+  }
+
+  &__error-message {
+    margin-top: 6px;
+    color: $border-color-error;
+  }
+}

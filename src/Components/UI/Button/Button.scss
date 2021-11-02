@@ -1,0 +1,22 @@
+@import "../../../css/mixins";
+@import "../../../css/const";
+
+.button {
+  padding: 10px 30px;
+  margin-left: auto;
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  @include animate();
+
+  &:hover {
+    border: 2px solid $border-color-hover;
+  }
+
+  &:disabled {
+    border: 2px solid $border-color;
+    color: $disabled-color;
+    cursor: not-allowed;
+  }
+}

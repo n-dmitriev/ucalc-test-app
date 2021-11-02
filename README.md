@@ -1,3 +1,8 @@
+# Test task for the uCalc company 
+
+Task text: 
+https://docs.google.com/document/d/1l-vjd3GQ0wClk7APxgk5ImxSJtGngbtxhox8c3fjrnM/edit
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
