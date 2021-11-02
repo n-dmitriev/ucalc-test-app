@@ -16,7 +16,7 @@ export const Input = (
     const handleChange = (e) => setValidPassword(onChange(e))
 
     return (
-        <label className={`input ${passwordIsValid ? '' : 'input_error'}`}>
+        <label className={`input ${passwordIsValid ? 'input_valid' : 'input_error'}`}>
             {label}:
             <input disabled={disabled} onChange={handleChange} type={type} name={name} required={required}/>
             {

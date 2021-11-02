@@ -25,7 +25,7 @@ export const ResetPasswordForm = (props) => {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        console.log(password)
+        alert(`Ваш новый пароль: ${password}`)
     }
 
     return (
@@ -43,6 +43,7 @@ export const ResetPasswordForm = (props) => {
                     name={'password'}
                     errorMessage={'Пароль должен содержать не менее 8 символов и одну заглавную букву!'}
                     onChange={onChangePassword}
+                    required={true}
                 />
 
                 <Input
@@ -51,6 +52,7 @@ export const ResetPasswordForm = (props) => {
                     name={'repeatPassword'}
                     errorMessage={'Пароли не совпадают!'}
                     onChange={onChangeRepeatPassword}
+                    required={true}
                 />
 
                 <Button
